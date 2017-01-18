@@ -1,0 +1,8 @@
+com\in\Controller\ForumController.class
+com\in\Services\ForumServiceImpl.class
+com\in\DAO\ForumDAOImpl.class
+com\in\Entity\Forum.class
+com\in\Services\ForumService.class
+com\in\DAO\ForumDAO.class
+com\in\Controller\HomeController.class
+com\in\Entity\Friends.class

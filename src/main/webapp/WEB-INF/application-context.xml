@@ -27,9 +27,9 @@
 	
 	<context:component-scan base-package="com.*" />
 	
-	<beans:bean id="sessionFactory"
+	<beans:bean  id="sessionFactory"
 		class="org.springframework.orm.hibernate4.LocalSessionFactoryBean">
-
+ 
 		<beans:property name="dataSource" ref="dataSource" />
 		<beans:property name="hibernateProperties">
 		
@@ -45,10 +45,11 @@
 		<beans:property name="packagesToScan">
 			<beans:list>
 				<beans:value>com.*</beans:value>
+			
 			</beans:list>
 		</beans:property>
 	</beans:bean>
-	<beans:bean id="transactionManager"
+	 <beans:bean id="transactionManager"
 		class="org.springframework.orm.hibernate4.HibernateTransactionManager">
 		<beans:property name="sessionFactory" ref="sessionFactory" />
 	</beans:bean>
